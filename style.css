@@ -1,0 +1,13 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+header { background: #333; color: white; padding: 15px; text-align: center; }
+.logo { width: 80px; }
+.banner img { width: 100%; max-height: 250px; object-fit: cover; }
+.products { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; }
+.product { background: white; padding: 10px; border-radius: 8px; width: 150px; text-align: center; }
+.product img { width: 100%; height: 100px; object-fit: cover; border-radius: 5px; }
+.buttons { text-align: center; margin: 20px; }
+.btn { background: #007BFF; color: white; padding: 10px 15px; text-decoration: none; margin: 5px; display: inline-block; border-radius: 5px; }
+.btn:hover { background: #0056b3; }
+form { background: white; padding: 20px; border-radius: 8px; max-width: 400px; margin: auto; }
+label { display: block; margin-top: 10px; }
+input, textarea, select { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Customer Order Form</h1>
+  </header>
+  <main>
+    <form id="orderForm">
+      <label>Name:</label><input type="text" required><br>
+      <label>Phone:</label><input type="tel" required><br>
+      <label>Email:</label><input type="email" required><br>
+      <label>Address:</label><textarea required></textarea><br>
+
+      <label>Payment Method:</label>
+      <select required>
+        <option value="Cash">Cash</option>
+        <option value="Card">Card</option>
+        <option value="EFT">EFT</option>
+      </select><br>
+
+      <button type="submit" class="btn">Submit Order</button>
+    </form>
+  </main>
+</body>
+</html>
