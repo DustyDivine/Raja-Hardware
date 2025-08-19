@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register — Raja Hardware</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header simple">
+    <h1>Create Account</h1>
+  </header>
+  <main class="container">
+    <form class="card form" id="registerForm">
+      <label>Username<input id="regUser" required></label>
+      <label>Email<input id="regEmail" type="email" required></label>
+      <label>Password<input id="regPass" type="password" required></label>
+      <label>Confirm Password<input id="regPass2" type="password" required></label>
+      <div class="actions">
+        <button class="btn" type="submit">Register</button>
+        <a class="btn btn-outline" href="index.html">Cancel</a>
+      </div>
+      <p class="note">Simple demo: details are saved only in your browser.</p>
+    </form>
+  </main>
+</body>
+</html>

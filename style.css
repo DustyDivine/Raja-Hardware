@@ -1,0 +1,45 @@
+:root{
+  --bg:#f7f8fb;--txt:#222;--muted:#6b7280;--brand:#1f4f8b;--brand2:#0f7b6c;--panel:#fff;--line:#e5e7eb
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--txt)}
+h1,h2{margin:0 0 10px}
+.header{background:var(--brand);color:#fff;padding:14px 16px}
+.header.simple{background:#0d2a49}
+.brand{display:flex;align-items:center;gap:12px;justify-content:space-between}
+.brand .logo{height:56px;border-radius:8px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+.nav{display:flex;gap:14px;margin-top:10px}
+.nav-link{color:#fff;text-decoration:none;font-weight:600}
+.nav-link:hover{text-decoration:underline}
+.container{max-width:1100px;margin:18px auto;padding:0 16px}
+.banner img{width:100%;height:240px;object-fit:cover;display:block;border-bottom:1px solid var(--line)}
+
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.tile{background:#fafafa;border:1px solid var(--line);border-radius:10px;overflow:hidden;text-align:center}
+.tile img{width:100%;height:120px;object-fit:cover;display:block}
+.tile figcaption{padding:10px;color:#111}
+
+.products .product{background:#fafafa;border:1px solid var(--line);border-radius:10px;padding:10px}
+.product img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+.product .pname{font-weight:700;margin-top:8px}
+.product .price{color:var(--brand2);font-weight:700;margin-bottom:8px}
+.product label{display:block;font-size:14px;color:#333;margin-top:6px}
+.product input.qty{width:100%;padding:8px;border:1px solid #d1d5db;border-radius:8px}
+
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.btn{background:var(--brand);color:#fff;border:none;border-radius:10px;padding:10px 14px;text-decoration:none;display:inline-block;font-weight:700;cursor:pointer}
+.btn-secondary{background:var(--brand2)}
+.btn-outline{background:#fff;color:#111;border:1px solid var(--line)}
+.btn:hover{filter:brightness(.95)}
+
+.form label{display:block;margin:10px 0}
+.form input,.form textarea,.form select{width:100%;padding:10px;border:1px solid #d1d5db;border-radius:8px}
+.note{color:var(--muted);font-size:13px}
+.table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden}
+.table th,.table td{border-bottom:1px solid var(--line);padding:10px;text-align:left}
+.table tfoot td{font-weight:700}
+.tright{text-align:right}
+.footer{padding:14px;text-align:center;color:#fff;background:#0d2038;margin-top:18px}
+.link{background:none;border:none;color:#fff;text-decoration:underline;cursor:pointer}
+.spacer{flex:1}

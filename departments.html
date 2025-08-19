@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Departments — Raja Hardware</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body onload="guardRoute()">
+  <header class="header">
+    <div class="brand">
+      <h1>Departments</h1>
+      <div class="spacer"></div>
+      <button class="link" onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Build Department</h2>
+      <div class="grid products">
+        <div class="product">
+          <img src="cement.jpg" alt="Cement 50kg">
+          <div class="pname">Cement 50kg</div>
+          <div class="price" data-price="120">R120</div>
+          <label><input type="checkbox" class="pick"> Select</label>
+          <label>Qty<input type="number" min="1" value="1" class="qty"></label>
+        </div>
+        <div class="product">
+          <img src="brick alt="Bricks (1000)">
+          <div class="pname">Bricks (per 1000)</div>
+          <div class="price" data-price="1500">R1500</div>
+          <label><input type="checkbox" class="pick"> Select</label>
+          <label>Qty<input type="number" min="1" value="1" class="qty"></label>
+        </div>
+        <div class="product">
+          <img src="images/paint.jpg" alt="Paint 20L">
+          <div class="pname">Paint 20L</div>
+          <div class="price" data-price="850">R850</div>
+          <label><input type="checkbox" class="pick"> Select</label>
+          <label>Qty<input type="number" min="1" value="1" class="qty"></label>
+        </div>
+        <div class="product">
+          <img src="images/tiles.jpg" alt="Floor Tiles">
+          <div class="pname">Floor Tiles (box)</div>
+          <div class="price" data-price="400">R400</div>
+          <label><input type="checkbox" class="pick"> Select</label>
+          <label>Qty<input type="number" min="1" value="1" class="qty"></label>
+        </div>
+        <div class="product">
+          <img src="images/hammer.jpg" alt="Hammer">
+          <div class="pname">Hammer</div>
+          <div class="price" data-price="150">R150</div>
+          <label><input type="checkbox" class="pick"> Select</label>
+          <label>Qty<input type="number" min="1" value="1" class="qty"></label>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Ceiling Department</h2>
+      <div class="grid products">
+        <div class="product">
+          <img src="images/ceiling_board.jpg" alt="Ceiling Board">
+          <div class="pname">Ceiling Board</div>
+          <div class="price" data-price="350">R350</div>
+          <label><input type="checkbox" class="pick"> Select</label>
+          <label>Qty<input type="number" min="1" value="1" class="qty"></label>
+        </div>
+        <div class="product">
+          <img src="images/pvc_panel.jpg" alt="PVC Panel">
+          <div class="pname">PVC Ceiling Panel</div>
+          <div class="price" data-price="400">R400</div>
+          <label><input type="checkbox" class="pick"> Select</label>
+          <label>Qty<input type="number" min="1" value="1" class="qty"></label>
+        </div>
+        <div class="product">
+          <img src="images/ceiling_tile.jpg" alt="Ceiling Tile">
+          <div class="pname">Ceiling Tile</div>
+          <div class="price" data-price="120">R120</div>
+          <label><input type="checkbox" class="pick"> Select</label>
+          <label>Qty<input type="number" min="1" value="1" class="qty"></label>
+        </div>
+        <div class="product">
+          <img src="images/light_fitting.jpg" alt="Light Fitting">
+          <div class="pname">Light Fitting</div>
+          <div class="price" data-price="250">R250</div>
+          <label><input type="checkbox" class="pick"> Select</label>
+          <label>Qty<input type="number" min="1" value="1" class="qty"></label>
+        </div>
+        <div class="product">
+          <img src="images/screws.jpg" alt="Ceiling Screws">
+          <div class="pname">Ceiling Screws (box)</div>
+          <div class="price" data-price="60">R60</div>
+          <label><input type="checkbox" class="pick"> Select</label>
+          <label>Qty<input type="number" min="1" value="1" class="qty"></label>
+        </div>
+      </div>
+    </section>
+
+    <div class="actions">
+      <button class="btn" onclick="addToOrder()">Add to Order</button>
+      <a class="btn btn-secondary" href="order.html">Go to Payment</a>
+    </div>
+  </main>
+
+  <footer class="footer">© 2025 Raja Hardware</footer>
+</body>
+</html>

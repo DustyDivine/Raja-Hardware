@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raja Hardware — Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <img src="logo.jpg" alt="Raja Hardware logo" class="logo">
+      <div>
+        <h1>Raja Hardware</h1>
+        <p class="tagline">Quality tools & ceiling supplies</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="departments.html" class="nav-link" onclick="return requireLogin()">Departments</a>
+      <a href="order.html" class="nav-link" onclick="return requireLogin()">Payment</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <img src="banner.webp" alt="Hardware banner">
+  </section>
+
+  <main class="container">
+    <section class="intro card">
+      <h2>Welcome</h2>
+      <p>Raja Hardware sells building tools and ceiling materials at affordable prices. Sign up or log in to start ordering.</p>
+      <div class="actions">
+        <a class="btn" href="register.html">Register</a>
+        <a class="btn btn-secondary" href="login.html">Login</a>
+        <a class="btn btn-outline" href="departments.html" onclick="return requireLogin()">Enter Departments</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Ceiling Highlights</h2>
+      <div class="grid">
+        <figure class="tile">
+          <img src="louisiana_ceiling.jpg" alt="Ceiling Board">
+          <figcaption>Ceiling Board — R350</figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="pvc.webp" alt="PVC Ceiling Panel">
+          <figcaption>PVC Ceiling Panel — R400</figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="ceilling tile.jpg" alt="Ceiling Tile">
+          <figcaption>Ceiling Tile — R120</figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="light.jpg" alt="Light Fitting">
+          <figcaption>Light Fitting — R250</figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="screws.png" alt="Ceiling Screws">
+          <figcaption>Ceiling Screws — R60</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© 2025 Raja Hardware</footer>
+</body>
+</html>

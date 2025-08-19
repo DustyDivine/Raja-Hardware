@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment — Raja Hardware</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body onload="guardRoute(); loadOrderSummary();">
+  <header class="header">
+    <h1>Customer & Payment</h1>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Order Summary</h2>
+      <table class="table" id="summaryTable">
+        <thead><tr><th>#</th><th>Item</th><th>Qty</th><th>Price</th><th>Subtotal</th></tr></thead>
+        <tbody></tbody>
+        <tfoot><tr><td colspan="4" class="tright">Total</td><td id="totalCell">R 0.00</td></tr></tfoot>
+      </table>
+      <div class="actions">
+        <button class="btn" onclick="calcTotal()">Calculate Total</button>
+      </div>
+    </section>
+
+    <section class="card form">
+      <h2>Customer Details</h2>
+      <label>Full Name<input id="custName" required></label>
+      <label>Phone<input id="custPhone" type="tel" required></label>
+      <label>Address<textarea id="custAddr" required></textarea></label>
+      <label>Email<input id="custEmail" type="email"></label>
+
+      <h2>Payment</h2>
+      <label>Method
+        <select id="payMethod">
+          <option>Cash</option>
+          <option>Card</option>
+          <option>EFT</option>
+        </select>
+      </label>
+
+      <div class="actions">
+        <button class="btn btn-secondary" onclick="submitOrder()">Pay / Submit</button>
+        <button class="btn btn-outline" onclick="clearOrder()">Clear Order</button>
+      </div>
+    </section>
+
+    <section class="card" id="receipt" style="display:none">
+      <h2>Receipt</h2>
+      <div id="receiptBody"></div>
+    </section>
+  </main>
+
+  <footer class="footer">© 2025 Raja Hardware</footer>
+</body>
+</html>
